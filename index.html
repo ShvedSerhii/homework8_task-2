@@ -1,64 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
-    />
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>To Do List</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="app">
-        <div class="app__header">
-          <div class="app__title">
-            <span class="app__title-text">To Do List</span>
-          </div>
-          <div class="app__info">
-            <div class="app__info-item">
-              <span class="app__info-text">All tasks</span>
-              <span class="app__info-number" id="js-all-tasks"></span>
-            </div>
-            <div class="app__info-item">
-              <span class="app__info-text">Done tasks</span>
-              <span class="app__info-number" id="js-done-tasks"></span>
-            </div>
-          </div>
-        </div>
-        <div class="app__body">
-          <ul class="app__list" id="app__list"></ul>
-        </div>
-        <div class="app__footer">
-          <form action="#">
-            <div
-              class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
-            >
-              <input
-                class="mdl-textfield__input"
-                type="text"
-                id="app__task-new"
-              />
-              <label class="mdl-textfield__label" for="sample3"
-                >Add new task</label
-              >
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>Task2</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrap">
+      <form action="#" id="form_value">
+        <input type="text" placeholder="Input value" id="input_text">
+        <button type="submit" id="input_button">ADD</button>
+      </form>
+      <form action="#">
+        <input type="search" placeholder="Search" id="search">
+      </form>
+    </div>
+    <div class="list"></div>
+  </div>
+  
+<script src="script.js"></script>
+</body>
+
 </html>
