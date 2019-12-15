@@ -8,7 +8,10 @@ const search = document.getElementById('search')
 const list = document.getElementById('list')
 
 fromEvent(form, 'submit').pipe(
-  map (x => values.push(x.target[0].value))
+  map (x => {
+    values.push(x.target[0].value)
+    x.target[0].value = ''
+  })
 ).subscribe(
   x => updateList(values) 
 )
